@@ -167,7 +167,7 @@ textarea {
 }
 
 button {
-  overflow: visible
+  overflow: visible;
 }
 
 button,
@@ -193,6 +193,7 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0
 }
+
 
 input {
   line-height: normal
@@ -980,7 +981,7 @@ body {
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 30%;
   overflow: hidden
 }
 
@@ -1149,6 +1150,23 @@ body {
   height: 475px
 }
 
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skillsList li {
+  margin: 10px;
+  padding: 10px;
+  background-color: #0f33ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .about--banner::before {
   content: "";
   position: absolute;
@@ -1282,6 +1300,21 @@ body {
   text-transform: uppercase;
   -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
   transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+.modal--options a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal--options a svg,
+.modal--options a p {
+  display: inline-block;
+  margin: 0 5px; /* Adjust the margin as needed */
+  vertical-align: middle; /* Ensure vertical alignment */
 }
 
 @media (max-width: 767px) {
